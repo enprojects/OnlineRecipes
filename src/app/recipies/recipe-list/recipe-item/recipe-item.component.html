@@ -1,0 +1,22 @@
+<div class="row">
+
+    <div class="col-xs-7">
+
+        <ul class="list-group" ng>
+
+            <li class="list-group-item">
+                <a href="#" (click)="onSelected()">
+                    <div class="thumbnail"> <img   [ngStyle]="{'heigh' : '50px', 'width' : '100px'} " [src]="recipe.imagePath"
+                            alt="{{recipe.description}}"></div>
+                    <div class="card-body">
+                        <h3 class="card-title">{{recipe.name}}</h3>
+                        <p class="card-text">{{recipe.description}}</p>
+                    </div>
+                </a>
+            </li>
+
+
+        </ul>
+
+    </div>
+</div>

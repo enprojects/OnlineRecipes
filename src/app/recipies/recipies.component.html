@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-5">
+        <!-- <app-recipe-list (emitToRecipeCompFromList)="passDataToDataComp($event)"></app-recipe-list> -->
+        <!-- <app-recipe-list (emitToRecipeCompFromList)="recipePassFromParent = $event"></app-recipe-list> -->
+        <!-- <app-recipe-list (emitToRecipeCompFromList)="recipePassFromParent = $event"></app-recipe-list> -->
+        <app-recipe-list></app-recipe-list>
+    </div>
+    <div class="col-md-7">
+        <app-recipe-data [recipe]="recipePassFromParent" ></app-recipe-data>
+    </div>
+</div>

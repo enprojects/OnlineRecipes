@@ -1,0 +1,43 @@
+<div class="container" *ngIf="recipe; else gotoTemplate">
+    <div class="row">
+        <div class="col">
+            <img src="" alt="">
+            <h1>{{recipe.name}}</h1>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="btn-group"> 
+
+                 
+                <button class="btn btn-primary"> Manege recipe </button>
+                <ul class="dropdown-menu">
+                    <li><a href=""> To shopping list </a></li>
+                    <li><a href="">Edit recipe</a></li>
+                    <li><a href="">Delete recipe </a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+       
+    </div>
+
+    <div class="row">
+ 
+           {{recipe.description}}
+        </div>
+
+        <div class="row">
+            Ingeridients
+        </div>
+</div>
+
+<ng-template #gotoTemplate>
+
+Please select recipe ...
+
+</ng-template>
